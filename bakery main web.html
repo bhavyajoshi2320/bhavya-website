@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery - Sweet Indulgence Bakery</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Lobster', cursive;
+      margin: 0;
+      padding: 0;
+      background: url('image1.webp') no-repeat center center fixed;
+      background-size: cover;
+      position: relative;
+      color: #fff;
+      text-align: center;
+    }
+
+    header {
+      background-color: rgba(255, 228, 225, 0.85);
+      padding: 20px 0;
+      color: #800000;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 15px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #800000;
+      font-size: 1.2em;
+    }
+
+    nav ul li a:hover {
+      color: #f08080;
+    }
+
+    .welcome-banner {
+      background-color: rgba(255, 240, 245, 0.95);
+      padding: 20px 10px;
+      border-top: 2px dashed #f08080;
+      border-bottom: 2px dashed #f08080;
+    }
+
+    .welcome-banner h1 {
+      margin: 0;
+      font-size: 2.2em;
+      color: #b22222;
+      text-shadow: 1px 1px #fff;
+    }
+
+    .gallery-section {
+      padding: 40px 20px;
+      background-color: rgba(255, 250, 240, 0.85);
+      border-top: 2px solid #f08080;
+    }
+
+    .gallery-section h2 {
+      color: #800000;
+      margin-bottom: 20px;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .gallery-grid img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  opacity: 0.9;
+  transform: scale(1);
+  transition: transform 0.4s ease-in-out, box-shadow 0.4s ease, opacity 0.4s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.2);
+  opacity: 1;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  z-index: 5;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+    .footer {
+      background-color: rgba(255, 228, 225, 0.85);
+      color: #800000;
+      text-align: center;
+      padding: 10px;
+    }
+    .nav li a:hover {
+            text-decoration: underline;
+        }
+  </style>
+</head>
+<body>
+
+  <!-- Welcome Banner -->
+  <div class="welcome-banner">
+    <h1>Welcome to our  website! 🎂</h1>
+  </div>
+
+  <!-- Header and Navigation -->
+  <header class="header">
+    <div class="container">
+      <nav>
+        <ul class="nav">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="product.html">Our Products</a></li>
+          <li><a href="bakery main web.html">Gallery</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="order.html">order</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Gallery Section -->
+  <section class="gallery-section">
+    <div class="container">
+      <h2>Our Gallery</h2>
+      <div class="gallery-grid">
+        <!-- Example Images -->
+                <img src="1.jpg" alt="Image 1">
+                <img src="2.avif" alt="Image 2">
+                <img src="3.jpg" alt="Image 3">
+                <img src="4.jpg" alt="Image 4">
+                <img src="5.webp" alt="Image 5">
+                <img src="6.jpg" alt="Image 6">
+                <img src="7.jpg" alt="Image 7">
+                <img src="8.jpg" alt="Image 8">
+                <img src="12.jpg" alt="Image 9">
+                <img src="15.jpg" alt="Image 10">
+                <img src="11.jpg" alt="Image 11">
+                <img src="13.jpg" alt="Image 12">
+                <img src="9.jpg" alt="Image 13">
+                <img src="14.jpg" alt="Image 14">
+                <img src="10.jpg" alt="Image 15">
+                <img src="18.jpg" alt="Image 16">
+                <img src="16.jpg" alt="Image 17">
+                <img src="20.jpg" alt="Image 18">
+                <img src="17.jpg" alt="Image 19">
+                <img src="19.jpg" alt="Image 20">
+                <img src="21.jpg" alt="Image 21">
+                <img src="22.jpg" alt="Image 22">
+                <img src="23.jpeg" alt="Image 23">
+                <img src="30.jpg" alt="Image 24">
+                <img src="25.jpg" alt="Image 25">
+                <img src="24.webp" alt="Image 26">
+                <img src="28.jpg" alt="Image 27">
+                <img src="26.jpg" alt="Image 28">
+                <img src="29.jpg" alt="Image 29">
+                <img src="27.jpg" alt="Image 30">
+                <img src="40.jpg" alt="Image 31">
+                <img src="35.jpg" alt="Image 32">
+                <img src="31.jpg" alt="Image 33">
+                <img src="33.webp" alt="Image 34">
+                <img src="39.jpg" alt="Image 35">
+                <img src="36.jpg" alt="Image 36">
+                <img src="32.jpg" alt="Image 37">
+                <img src="34.jpg" alt="Image 38">
+                <img src="38.jpg" alt="Image 39">
+                <img src="37.webp" alt="Image 40">
+                <img src="50.jpg" alt="Image 41">
+                <img src="42.jpg" alt="Image 42">
+                <img src="45.jpg" alt="Image 43">
+                <img src="47.jpg" alt="Image 44">
+                <img src="43.webp" alt="Image 45">
+                <img src="46.jpg" alt="Image 46">
+                <img src="41.jpg" alt="Image 47">
+                <img src="44.jpg" alt="Image 48">
+                <img src="49.jpg" alt="Image 49">
+                <img src="48.jpg" alt="Image 50">
+
+        <!-- Add more as needed -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Optional Staggered Animation -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const images = document.querySelectorAll('.gallery-grid img');
+      images.forEach((img, index) => {
+        img.style.animation = "fadeIn 0.6s ease forwards";
+        img.style.animationDelay = `${index * 0.1}s`;
+      });
+    });
+  </script>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Sweet Indulgence Bakery. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Products Section Styling */
+        body{
+            background-image: url('3003.jpg'); /* Replace with your image path */
+        }
+        .products-section {
+            padding: 40px 20px;
+            background-color: rgba(255, 250, 240, 0.8);
+            text-align: center;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .product-item {
+            background: rgba(255, 228, 225, 0.8);
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .product-item img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .product-item h3 {
+            color: #800000;
+            margin: 10px 0;
+        }
+
+        .product-item:hover {
+            transform: scale(1.05);
+        }
+        .welcome-banner {
+      background-color: rgba(255, 240, 245, 0.95);
+      padding: 20px 10px;
+      border-top: 2px dashed #f08080;
+      border-bottom: 2px dashed #f08080;
+    }
+
+    .welcome-banner h1 {
+      margin: 0;
+      font-size: 2.2em;
+      color: #b22222;
+      text-shadow: 1px 1px #fff;
+    }
+    .nav li a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="welcome-banner">
+        <center> <h1>Welcome to our  website! 🎂</h1></center> 
+        </div>
+
+    <div class="header">
+        <div class="container">
+            <nav>
+                <ul class="nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Our Products</a></li>
+                    <li><a href="bakery main web.html">Gallery</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="order.html">Order</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Products Section -->
+    <section id="products" class="products-section">
+        <div class="container">
+            <h2>Our Special Products</h2>
+            <div class="products-grid">
+                <div class="product-item">
+                    <img src="cake1.jpg" alt="Chocolate Cake">
+                    <h3>Chocolate Cake</h3>
+                    <p>Rich and moist chocolate cake with creamy frosting.</p>
+                    <br>500 gm = Rs.650.00/-<br>
+                    <br>1 kg = Rs.1300.00/-<br>
+                </div>
+                <div class="product-item">
+                    <img src="cupcake.jpg" alt="Cupcake">
+                    <h3>Vanilla Cupcake</h3>
+                    <p>Soft vanilla cupcakes topped with buttercream frosting.</p>
+                    <br>400 gm = Rs.800.00/-<br>
+                    <br>800 gm = Rs.1600.00/-<br>
+                </div>
+                <div class="product-item">
+                    <img src="crpissant.jpg" alt="Croissant">
+                    <h3>Buttery Croissant</h3>
+                    <p>Flaky and golden croissants made fresh daily.</p>
+                    <br>200 gm = Rs.400.00/-<br>
+                    <br>600 gm = Rs.1200.00/-<br>
+                </div>
+                <div class="product-item">
+                    <img src="macron.webp" alt="Macaron">
+                    <h3>French Macarons</h3>
+                    <p>Delicate and colorful macarons in various flavors.</p>
+                    <br>300 gm = Rs.600.00/-<br>
+                    <br>900 gm = Rs.1800.00/-<br>
+                </div>
+                <div class="product-item">
+                    <img src="bread.jpg" alt="Fresh bread">
+                    <h3>Fresh Bread</h3>
+                    <p>Handcrafted sourdough and whole grain loaves.</p>
+                    <br>500 gm = Rs.650.00/-<br>
+                    <br>1 kg = Rs.1300.00/-<br>
+                </div>
+                <div class="product-item">
+                    <img src="White-Velvet-Cake-3.jpg" alt="White velvet Cake">
+                    <h3>White Velvet Cake</h3>
+                    <p>Rich and creamy white chocolate cake with elegant floral designs.</p>
+                    <br>1 kg = Rs.2000.00/-<br>
+                    <br>2 kg = Rs.4000.00/-<br>
+                </div>
+                <div class="product-item">
+                    <img src="bunberry cake.jpeg" alt="Bunberry Cake">
+                    <h3>Bunberry Cake</h3>
+                    <p>This is one of the oldest cake recipes in Britain.</p>
+                    <br>500 gm = Rs.1000.00/-<br>
+                    <br>1 kg = Rs.2000.00/-<br>
+                </div>
+                <div class="product-item">
+                    <img src="Swiss roll.jpg" alt="Swiss Roll">
+                    <h3>Swiss Roll</h3>
+                    <p>Soft and creamy taste beautifully decorated with strawberries.</p>
+                    <br>500 gm = Rs.1500.00/-<br>
+                    <br>1 kg = Rs.3000.00/-<br>
+                </div>
+                <div class="product-item">
+                    <img src="trifel.jpg" alt="Trifle">
+                    <h3>Trifle</h3>
+                    <p>This classic British dessert is layered with custard, fruit, and sponge cake.</p>
+                    <br>600 gm = Rs.1200.00/-<br>
+                    <br>1.5 kg = Rs.3000.00/-<br>
+                </div>
+                <div class="product-item">
+                    <img src="apple pie.jpeg" alt="Apple Pie">
+                    <h3>Apple Pie</h3>
+                    <p>Traditional apple pie with cinnamon-spiced filling and a golden flaky crust.</p>
+                    <br>200 gm = Rs.600.00/-<br>
+                    <br>800 gm = Rs.2400.00/-<br>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

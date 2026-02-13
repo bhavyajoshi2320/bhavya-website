@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sweet Indulgence Bakery</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* Slider Section */
+    .slider {
+      position: relative;
+      width: 100%;
+      padding: 40px 0; /* Top and bottom space */
+      background-color: #fdf6f0; /* Light background if desired */
+    }
+
+    .slide-container {
+      width: 100%;
+      max-width: 1000px;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+
+    .slides {
+      display: flex;
+      transition: transform 1s ease-in-out;
+    }
+
+    .slide {
+      min-width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .slide img {
+      max-height: 550px;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+    }
+    .about{
+        font-size: 23px;
+    }
+    .products .product-list {
+  list-style: none;
+  padding: 30px;
+  display: flex;
+  flex-direction: row; /* or row if you want horizontal list */
+  align-items: center;
+  gap: 30px;
+}
+.welcome-banner {
+  background-color: rgba(255, 240, 245, 0.9);
+  padding: 20px 10px;
+  border-top: 2px dashed #f08080;
+  border-bottom: 2px dashed #f08080;
+}
+
+.welcome-banner h1 {
+  margin: 0;
+  text-align: center;
+  font-size: 2.2em;
+  color: #b22222;
+  text-shadow: 1px 1px #fff;
+}
+
+  </style>
+</head>
+<body>
+      <!-- Welcome Message -->
+      <div class="welcome-banner">
+        <h1>Welcome to Sweet Indulgence Bakery! 🎂</h1>
+     </div>
+
+  <header class="header">
+    <div class="container">
+      <nav>
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="product.html">Our Products</a></li>
+          <li><a href="bakery main web.html">Gallery</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="order.html">order</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="slider" class="slider">
+    <div class="slide-container">
+      <div class="slides">
+        <div class="slide">
+          <img src="101.jpg" alt="Delicious Cake">
+        </div>
+        <div class="slide">
+          <img src="202.avif" alt="Gourmet Pastry">
+        </div>
+        <div class="slide">
+          <img src="303.jpg" alt="Fresh Bread">
+        </div>
+        <div class="slide">
+          <img src="404.jpg" alt="Assorted Cookies">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="home" class="hero">
+    <div class="container">
+      <h2>Welcome to Sweet Indulgence Bakery</h2>
+      <p>Baking Happiness, One Treat at a Time!</p>
+    </div>
+  </section>'
+  <section id="products" class="products">
+    <div class="container">
+      <h2>Our Products</h2>
+      <ul class="product-list">
+        <li>Custom Cakes</li>
+        <li>French Pastries</li>
+        <li>Artisanal Bread</li>
+        <li>Gourmet Cookies</li>
+      </ul>
+    </div>
+  </section>
+  <hr size="3" color="black">
+  <section id="gallery" class="gallery">
+    <div class="container">
+      <h2>Gallery</h2>
+      <div class="image-grid">
+        <img src="cake.jpg" alt="Custom Cake">
+        <img src="pastry.jpg" alt="French Pastry">
+        <img src="bread.jpg" alt="Artisanal Bread">
+        <img src="cookies.jpg" alt="Gourmet Cookies">
+      </div>
+    </div>
+</hr>
+  </section>
+  <hr size="3" color="black">
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>We are a premium bakery specializing in artisanal bread, gourmet pastries, and custom cakes. Our mission is to create baked goods that bring joy and comfort to our community.</p>
+      <p>Founded in 2010, Sweet Indulgence Bakery began as a small family dream, fueled by a passion for baking and a desire to share the warmth of homemade treats. What started with a handful of recipes passed down through generations has blossomed into a beloved neighborhood favorite.</p>
+      <p>Each item we craft is made with the finest ingredients, lots of love, and a commitment to excellence. From buttery croissants to rich chocolate ganache cakes, we believe every bite should be a delightful experience.</p>
+      <p>We also take pride in supporting local farmers and using sustainable practices wherever possible. At Sweet Indulgence, it's not just about the sweets—it's about the people we serve and the memories we help create.</p>
+    </div>
+  </section>
+</hr>
+<hr size="3" color="black">
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>Email: info@sweetindulgencebakery.com</p>
+      <p>Phone: 123-456-7890</p>
+    </div>
+  </section>
+</hr>
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Sweet Indulgence Bakery. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    let currentIndex = 0;
+    const slides = document.querySelector('.slides');
+    const slideCount = document.querySelectorAll('.slide').length;
+
+    setInterval(() => {
+      currentIndex = (currentIndex + 1) % slideCount;
+      slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }, 4000);
+  </script>
+</body>
+</html>

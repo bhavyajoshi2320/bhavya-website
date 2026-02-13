@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Sweet Indulgence Bakery</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* General styling */
+        body {
+            font-family: 'Lobster', cursive;
+            margin: 0;
+            padding: 0;
+            background-image: url('2002.jpg'); /* Add your image here */
+            background-size: cover; /* Make the background cover the whole page */
+            background-position: center; /* Center the background image */
+            background-attachment: fixed; /* Keep the background fixed when scrolling */
+            color: #333;
+        }
+
+        header {
+            background-color: rgba(255, 228, 225, 0.8); /* Semi-transparent background */
+            padding: 20px 0;
+            color: #800000;
+        }
+
+        header .container {
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #800000;
+            font-size: 1.2em;
+        }
+
+        nav ul li a:hover {
+            color: #f08080;
+        }
+
+        /* Contact Form Styling */
+        .contact-form {
+            padding: 40px 20px;
+            background-color: rgba(255, 250, 240, 0.8); /* Semi-transparent background for the form */
+            border-top: 2px solid #f08080;
+            text-align: center;
+            margin: 40px auto;
+            max-width: 700px;
+        }
+
+        .contact-form h1 {
+            color: #800000;
+            margin-bottom: 20px;
+        }
+
+        .contact-form form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        .contact-form button {
+            background-color: #800000;
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 25px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #f08080;
+        }
+
+        /* Contact Information Styling */
+        .contact-info {
+            background-color: rgba(255, 228, 225, 0.8); /* Semi-transparent background */
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .contact-info h3 {
+            color: #800000;
+            margin-bottom: 10px;
+        }
+
+        .contact-info p {
+            font-size: 1.1em;
+            margin: 5px 0;
+        }
+
+        /* Map Section */
+        .map {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .map iframe {
+            width: 120%;
+            height: 400px;
+            border: 0;
+        }
+
+        /* Footer Section */
+        .footer {
+            background-color: rgba(255, 228, 225, 0.8); /* Semi-transparent footer */
+            color: #800000;
+            text-align: center;
+            padding: 10px;
+            border-top: 2px solid #f08080;
+        }
+        .welcome-banner {
+      background-color: rgba(255, 240, 245, 0.95);
+      padding: 20px 10px;
+      border-top: 2px dashed #f08080;
+      border-bottom: 2px dashed #f08080;
+    }
+
+    .welcome-banner h1 {
+      margin: 0;
+      font-size: 2.2em;
+      color: #b22222;
+      text-shadow: 1px 1px #fff;
+    }
+    .nav li a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="welcome-banner">
+      <center> <h1>Welcome to our  website! 🎂</h1></center> 
+      </div>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <nav>
+                <ul class="nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Our Products</a></li>
+                    <li><a href="bakery main web.html">Gallery</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="order.html">Order</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+   <!-- Contact Form Section -->
+<section class="contact-form">
+    <div class="container">
+        <h1>Contact Us</h1>
+        <form id="contactForm">
+            <label>Full name:</label>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <label>Email:</label>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <label>Message:</label>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <div id="thankYouMessage" style="display:none; color: green; font-size: 1.5em; margin-top: 20px;">
+            Thank you! Your message has been sent. 🍰
+        </div>
+    </div>
+</section>
+
+<!-- Script -->
+<script>
+    const form = document.getElementById('contactForm');
+    const thankYou = document.getElementById('thankYouMessage');
+
+    form.addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent actual form submission
+        thankYou.style.display = 'block'; // Show thank you message
+        form.reset(); // Optionally clear form fields
+    });
+</script>
+
+
+    <!-- Contact Information Section -->
+    <section class="contact-info">
+        <div class="container">
+            <h3>Our Contact Information</h3>
+            <p>Email:joshibhavya2024@gmail.com</p>
+            <p>Phone:123-456-789</p>
+            <p>Address: 123 Bakery shop, ahmedabad City, ashram road</p>
+        </div>
+    </section>
+
+    <!-- Map Section (Optional) -->
+     <center>
+    <section class="map">
+        <div class="container">
+            <h3>Find Us</h3>
+            <iframe src="C:\Users\pinky\OneDrive\Desktop\website\740.jpeg" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+    </center>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Sweet Indulgence Bakery. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
