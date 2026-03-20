@@ -3,50 +3,60 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sweet Indulgence Bakery</title>
 
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HHZ68Q4H32"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- SEO Title -->
+  <title>Sweet Indulgence Bakery | Best Cakes, Pastries & Bakery in Ahmedabad</title>
 
-  gtag('config', 'G-HHZ68Q4H32');
-</script>  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Sweet Indulgence Bakery in Ahmedabad offers custom cakes, pastries, cookies, and fresh bread for all occasions. Order now!">
+  <meta name="keywords" content="bakery in Ahmedabad, cakes, pastries, cookies, custom cakes, birthday cakes">
+  <meta name="author" content="Sweet Indulgence Bakery">
+  <meta name="robots" content="index, follow">
 
+  <!-- Open Graph -->
+  <meta property="og:title" content="Sweet Indulgence Bakery">
+  <meta property="og:description" content="Delicious cakes and bakery items in Ahmedabad.">
+  <meta property="og:image" content="101.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://yourwebsite.com">
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HHZ68Q4H32"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-HHZ68Q4H32');
+  </script>
 
   <link rel="stylesheet" href="style.css">
 
   <style>
+    body {
+      font-family: 'Lobster', cursive;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)),
+      url('00001.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: #333;
+    }
 
-     body {
-  font-family: 'Lobster', cursive;
-  margin: 0;
-  padding: 0;
-  background: linear-gradient(
-      rgba(255,255,255,0.7),
-      rgba(255,255,255,0.7)
-    ),
-    url('00001.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  color: #333;
-}
-    /* Slider Section */
     .slider {
-      position: relative;
-      width: 100%;
-      padding: 40px 0; /* Top and bottom space */
-      background-color: #fdf6f0; /* Light background if desired */
+      padding: 40px 0;
+      background-color: #fdf6f0;
     }
 
     .slide-container {
-      width: 100%;
       max-width: 1000px;
-      margin: 0 auto;
+      margin: auto;
       overflow: hidden;
     }
 
@@ -58,166 +68,145 @@
     .slide {
       min-width: 100%;
       display: flex;
-      align-items: center;
       justify-content: center;
     }
 
     .slide img {
       max-height: 550px;
-      width: auto;
-      height: auto;
       object-fit: contain;
     }
-    .about{
-        font-size: 23px;
+
+    .welcome-banner {
+      background: rgba(255,240,245,0.9);
+      padding: 20px;
+      text-align: center;
+      color: #b22222;
     }
+
     .products .product-list {
-  list-style: none;
-  padding: 30px;
-  display: flex;
-  flex-direction: row; /* or row if you want horizontal list */
-  align-items: center;
-  gap: 30px;
-}
-.welcome-banner {
-  background-color: rgba(255, 240, 245, 0.9);
-  padding: 20px 10px;
-  border-top: 2px dashed #f08080;
-  border-bottom: 2px dashed #f08080;
-}
+      display: flex;
+      gap: 30px;
+      justify-content: center;
+      list-style: none;
+    }
 
-.welcome-banner h1 {
-  margin: 0;
-  text-align: center;
-  font-size: 2.2em;
-  color: #b22222;
-  text-shadow: 1px 1px #fff;
-}
-
-     .footer {
-      background-color: rgba(255, 228, 225, 0.85);
-      color: #800000;
+    .footer {
+      background: rgba(255,228,225,0.85);
       text-align: center;
       padding: 10px;
     }
-
-
-    
   </style>
 </head>
+
 <body>
-      <!-- Welcome Message -->
-      <div class="welcome-banner">
-        <h1>Welcome to Sweet Indulgence Bakery! 🎂</h1>
-     </div>
 
-  <header class="header">
-    <div class="container">
-      <nav>
-        <ul class="nav">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="product.html">Our Products</a></li>
-          <li><a href="bakery main web.html">Gallery</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="order.html">order</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+<!-- Welcome -->
+<div class="welcome-banner">
+  <h1>Best Bakery in Ahmedabad - Sweet Indulgence Bakery 🎂</h1>
+</div>
+
+<!-- Navbar -->
+<header>
+  <nav>
+    <ul class="nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="product.html">Our Products</a></li>
+      <li><a href="bakery main web.html">Gallery</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="order.html">Order</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Slider -->
+<section class="slider">
+  <div class="slide-container">
+    <div class="slides">
+      <div class="slide"><img src="101.jpg" alt="Chocolate Cake Ahmedabad"></div>
+      <div class="slide"><img src="202.avif" alt="Pastries Ahmedabad"></div>
+      <div class="slide"><img src="303.jpg" alt="Fresh Bread Ahmedabad"></div>
+      <div class="slide"><img src="404.jpg" alt="Cookies Ahmedabad"></div>
     </div>
-  </header>
+  </div>
+</section>
 
-  <section id="slider" class="slider">
-    <div class="slide-container">
-      <div class="slides">
-        <div class="slide">
-          <img src="101.jpg" alt="Delicious Cake">
-        </div>
-        <div class="slide">
-          <img src="202.avif" alt="Gourmet Pastry">
-        </div>
-        <div class="slide">
-          <img src="303.jpg" alt="Fresh Bread">
-        </div>
-        <div class="slide">
-          <img src="404.jpg" alt="Assorted Cookies">
-        </div>
-      </div>
-    </div>
-  </section>
+<!-- Hero -->
+<section>
+  <h2>Welcome to Sweet Indulgence Bakery</h2>
+  <p>Baking Happiness, One Treat at a Time!</p>
+</section>
 
-  <section id="home" class="hero">
-    <div class="container">
-      <h2>Welcome to Sweet Indulgence Bakery</h2>
-      <p>Baking Happiness, One Treat at a Time!</p>
-    </div>
-  </section>'
-  <section id="products" class="products">
-    <div class="container">
-      <h2>Our Products</h2>
-      <ul class="product-list">
-        <li>Custom Cakes</li>
-        <li>French Pastries</li>
-        <li>Artisanal Bread</li>
-        <li>Gourmet Cookies</li>
-      </ul>
-    </div>
-  </section>
-  <hr size="3" color="black">
-  <section id="gallery" class="gallery">
-    <div class="container">
-      <h2>Gallery</h2>
-      <div class="image-grid">
-        <img src="cake.jpg" alt="Custom Cake">
-        <img src="pastry.jpg" alt="French Pastry">
-        <img src="bread.jpg" alt="Artisanal Bread">
-        <img src="cookies.jpg" alt="Gourmet Cookies">
-      </div>
-    </div>
-</hr>
-  </section>
-  <hr size="3" color="black">
-  <section id="about" class="about">
-    <div class="container">
-      <h2>About Sweet Indulgence Bakery</h2>
+<!-- Products -->
+<section>
+  <h2>Our Products</h2>
+  <ul class="product-list">
+    <li>Custom Cakes</li>
+    <li>French Pastries</li>
+    <li>Artisanal Bread</li>
+    <li>Gourmet Cookies</li>
+  </ul>
+</section>
 
-<p>Sweet Indulgence Bakery is a premium bakery dedicated to creating delicious, fresh, and high-quality baked goods. We specialize in artisanal breads, gourmet pastries, custom cakes, cookies, and delightful desserts that bring happiness to every occasion.</p>
+<hr>
 
-<p>Founded with a passion for baking and creativity, Sweet Indulgence Bakery started as a small dream to share homemade flavors with our community. Over time, our dedication to quality and taste has helped us grow into a trusted place for bakery lovers.</p>
+<!-- Gallery -->
+<section>
+  <h2>Gallery</h2>
+  <img src="cake.jpg" alt="Custom Cake Ahmedabad">
+  <img src="pastry.jpg" alt="Pastry Bakery Ahmedabad">
+  <img src="bread.jpg" alt="Bread Bakery Ahmedabad">
+  <img src="cookies.jpg" alt="Cookies Bakery Ahmedabad">
+</section>
 
-<p>Every product we create is made using the finest ingredients, ensuring rich flavors and exceptional quality. From soft and fluffy cakes to crispy cookies and freshly baked bread, we carefully craft each item to deliver the perfect taste and texture.</p>
+<hr>
 
-<p>At Sweet Indulgence Bakery, we believe that every celebration deserves something special. Whether it’s a birthday, anniversary, festival, or a simple gathering, our custom cakes and desserts are designed to make your moments sweeter and more memorable.</p>
+<!-- About -->
+<section>
+  <h2>About Us</h2>
+  <p>Sweet Indulgence Bakery creates fresh and delicious bakery products with love.</p>
+</section>
 
-<p>We also focus on creativity and innovation by introducing new flavors, designs, and bakery treats that keep our customers excited and satisfied. Our goal is to combine traditional baking techniques with modern styles to offer unique and delightful products.</p>
+<hr>
 
-<p>Customer happiness is at the heart of everything we do. We take pride in serving our community with love, quality, and dedication, making Sweet Indulgence Bakery a place where every bite brings joy.</p>
-    </div>
-  </section>
-</hr>
-<hr size="3" color="black">
-  <section id="contact" class="contact">
-    <div class="container">
-      <h2>Contact Us</h2>
-      <p>Email: bhavyajoshi2320@sweetindulgencebakery.com</p>
-      <p>Phone: 942-657-4760</p>
-    </div>
-  </section>
-</hr>
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2026 Sweet Indulgence Bakery. All Rights Reserved.</p>
-    </div>
-  </footer>
+<!-- Contact -->
+<section>
+  <h2>Contact</h2>
+  <p>Email: bhavyajoshi2320@sweetindulgencebakery.com</p>
+  <p>Phone: 9426574760</p>
+</section>
 
-  <script>
-    let currentIndex = 0;
-    const slides = document.querySelector('.slides');
-    const slideCount = document.querySelectorAll('.slide').length;
+<!-- Footer -->
+<footer class="footer">
+  <p>&copy; 2026 Sweet Indulgence Bakery</p>
+</footer>
 
-    setInterval(() => {
-      currentIndex = (currentIndex + 1) % slideCount;
-      slides.style.transform = `translateX(-${currentIndex * 100}%)`;
-    }, 4000);
-  </script>
+<!-- Slider Script -->
+<script>
+let index = 0;
+const slides = document.querySelector('.slides');
+const total = document.querySelectorAll('.slide').length;
+
+setInterval(() => {
+  index = (index + 1) % total;
+  slides.style.transform = `translateX(-${index * 100}%)`;
+}, 3000);
+</script>
+
+<!-- Local SEO Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Bakery",
+  "name": "Sweet Indulgence Bakery",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Ahmedabad",
+    "addressCountry": "India"
+  },
+  "telephone": "+919426574760"
+}
+</script>
+
 </body>
 </html>
